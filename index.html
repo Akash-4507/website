@@ -22,7 +22,11 @@
         .section1 {
             width: 70%;
             height: 12rem;
-            background-color: aquamarine;
+            /* background-color: aquamarine;*/
+            background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -41,6 +45,7 @@
             flex-direction: column;
             justify-content: start;
             align-items: flex-start;
+            color: white;
         }
         .profile-img {
             height: 8rem;
@@ -62,7 +67,7 @@
             width: 70%;
             height: 20rem;
             /* background-color: aquamarine; */
-            border: 1px solid aquamarine;
+            border: 1px solid rgb(50, 13, 185);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -99,6 +104,11 @@
             font-weight: bold;
             color: aquamarine;
         }
+        .color-primary
+        {
+            align-content: top;
+            color: rgb(68, 10, 154);
+        }
     </style>
 </head>
 <body>
@@ -106,7 +116,7 @@
         <div class="profile-img-section">
         <img class="profile-img" src="https://www.postergully.com/cdn/shop/products/dcb8b019b9cbf5f25fe3c25578be3c5a.jpg?v=1578647602" alt="dog">
         </div>
-       <div>
+       <div class="profile-data">
          <h1>
             AKASH A    
         </h1>
@@ -116,7 +126,7 @@
        </div>
        </div>
     <div class="section2">
-        <h1 class="section-title">
+        <h1 class="color-primary">
             Objectiive
         </h1>
         <p>
@@ -124,7 +134,7 @@
         </p>
     </div>
     <div class="section3">
-        <h1 class="section-title">
+        <h1 class="color-primary">
             Education
         </h1>
     <table class="ed-table">
@@ -141,7 +151,7 @@
     </table>
     </div>
     <div class="section4">
-        <h1 class="section-title">Internships</h1>
+        <h1 class="color-primary">Internships</h1>
         <p>
             <span class="companies" > ACCOUNT MANAGAER XXX LTD </span>
             june 20zz; PRESENT;
