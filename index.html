@@ -123,8 +123,14 @@ background: linear-gradient(to right, #1CB5E0, #000046);
             border: 1px solid gray;
             border-collapse: collapse;
         }
+        th{
+            background: #000046;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #1CB5E0, #000046);
+        }
         th, td {
             padding: 1rem;
+            
             border:1px solid gray;
         }
         .companies {
@@ -134,7 +140,7 @@ background: linear-gradient(to right, #1CB5E0, #000046);
         .color-primary
         {
             align-content: top;
-            color: rgb(68, 10, 154);
+            color: rgba(68, 10, 154, 0.591);
             font-size: larger;
         }
         .p-content{
@@ -166,7 +172,9 @@ background: linear-gradient(to right, #1CB5E0, #000046);
             align-items: start;
             padding: 10px 15px;
             gap: 15px;
-            background-color: #181717;
+            background: #000046;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #1CB5E0, #000046);a;
             outline: 3px #181717 solid;
             outline-offset: -3px;
             border-radius: 5px;
@@ -191,7 +199,7 @@ background: linear-gradient(to right, #1CB5E0, #000046);
           }
           
           .button:hover .text {
-            color: #181717;
+            color: #240ec7;
           }
           
           .button:hover svg path {
@@ -288,7 +296,7 @@ background: linear-gradient(to right, #1CB5E0, #000046);
       <script>
         function github()
         {
-            window.location.replace("https://github.com/Akash-4507");
+            window.open('https://github.com/Akash-4507');
         }
       </script>
 
