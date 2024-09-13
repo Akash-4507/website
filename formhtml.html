@@ -60,7 +60,7 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
         }
 
         input:focus {
-            border-bottom: 2px solid #8E2DE2;
+            border-bottom: 2px  -webkit-linear-gradient(to right, #1CB5E0, #000046);; ;
             outline: none;
         }
 
@@ -79,7 +79,7 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
 
     <div class="login-container">
 
-        <form class="login-form" onsubmit="formdata(event)">
+        <form class="login-form" onsubmit="format(event)">
             <!-- <form class="login-form"> -->
             <input type="text" name="name" id="name" placeholder="Name">
             <input type="number" name="age" id="age" placeholder="age">
@@ -92,22 +92,18 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
     </div>
 </body>
 <script>
-    function formdata(e) {
+    function format(e) {
         e.preventDefault();
         let name = document.getElementById("name").value
         let email = document.getElementById("email").value
         let number = document.getElementById("number").value
         let password = document.getElementById("password").value
+        let age=document.getElementById("age").value;
         console.log(name)
-        // document.write(name)
-        const data = {
-            username: name,
-            useremail: email,
-            userphone: number,
-            userpassword: password
-        }
-        const { username, useremail, userphone, userpassword } = data
-        console.log(useremail)
+        console.log(age)
+        console.log(email)
+        console.log(number)
+        console.log(password)
     }
     let data1 = [1, 2, 3, 4]
     let data2 = ['a', 'b', 'c', 'd']
