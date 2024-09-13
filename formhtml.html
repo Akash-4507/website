@@ -99,11 +99,27 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
         let number = document.getElementById("number").value
         let password = document.getElementById("password").value
         let age=document.getElementById("age").value;
+        let usertype=age>=18 ? 'major' : 'minor'
+
+        if(name!=="" || email!=="" || number!==0 || password!=="" || age>0 )
+        {
+            if(name==="Akash")
+            {
+            console.log("Username already exists")
+            }
+            else{
+                console.log("success");
+            }
+        }
+        else{
+            console.log("Empty fields are not allowed")
+        }
         console.log(name)
         console.log(age)
         console.log(email)
         console.log(number)
         console.log(password)
+        console.log(usertype)
     }
     let data1 = [1, 2, 3, 4]
     let data2 = ['a', 'b', 'c', 'd']
