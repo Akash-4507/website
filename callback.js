@@ -14,13 +14,13 @@ function balprocess(data,callback)
 {
     if(data>0)
     {
-        console.log(`balance: $data`);
+        console.log(`balance: ${data}`);
     }
     callback()
 }
 function trigger()
 {
-    const data=45
+    const data=prompt("Enter the balance:")
     if(data>0)
     {
         balprocess(data,balsuccess)
@@ -33,3 +33,4 @@ function trigger()
         balprocess("Error",balerror)
     }
 }
+trigger();
