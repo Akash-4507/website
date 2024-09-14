@@ -53,7 +53,8 @@ apidata()
 async function apidata(){
     const apidata=await apicall();
     const stdata=apidata.map((data)=> {
-        console.log(data)
+      //  console.log(data)
     })
-   // console.log(apidata)
+    const activedata=apidata.filter(data=>data.ifActive)
+ console.log(activedata)
 }
